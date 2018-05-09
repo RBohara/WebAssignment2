@@ -1,33 +1,37 @@
 /* global styling */
-a:visited{
-    color: black;
-}
-
 body {
     background-color: blanchedalmond;
     padding: 0;
     margin: 0;
 }
 
+/* conatiner stylesheet */
 .container {
     width: 80%;
 }
 
 /* navigation css */
-#navigation {
+nav {
     background-color: indianred;
     position: fixed;
     width: 100%;
+    height: 80px;
     top: 0;
     left: 0;
 }
 
-#navigation ul li{
+nav a{
     list-style-type: none;
     display: inline-block;
-    text-align: right;
-    padding: 5px 5px 5px 5px;
+    align: right;
+    padding: 0 20px 0 20px;
+    text-decoration: none;
+    color: white;
 }
+
+.active {
+    color: black;
+} 
 
 /* intro css */
 .intro {
@@ -41,9 +45,5 @@ h5 {
     margin-top: 50px;
 }
 
-/* logo css */
-#logo {
-    width: 150px;
-    height: 120px;
-}
+
 
