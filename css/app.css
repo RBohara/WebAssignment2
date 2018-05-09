@@ -126,6 +126,10 @@ section.artists-odd {
     background-color: darkgray;
 }
 
+section.artists-odd article p {
+    margin-left: 25px;
+}
+
 section.artists-odd img{
         float: left;
 }
@@ -144,12 +148,34 @@ section.artists-odd, section.artists-even {
     padding: 10px 10px;
     margin: 15px 5px;
     width: 100%;
-    min-height: 150px;
+    min-height: 250px;
+    color: white;
 }
 
 section.artists-odd img, section.artists-even img {    
     width: 400px;
-    height: 150px;
+    height: 250px;
 }
 
+/* Footer styling */
+footer {
+    font-size: .8em;
+    margin: 40px;
+    color: grey;
+}
 
+ul.sponsor li{
+    list-style-type: none;
+    display: inline;
+    padding: 5px 25px;
+}
+
+ul.quick-links li {
+    display: inline;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+footer p {
+    text-align: center;
+}
