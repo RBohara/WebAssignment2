@@ -1,0 +1,49 @@
+/* global styling */
+a:visited{
+    color: black;
+}
+
+body {
+    background-color: blanchedalmond;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+}
+
+/* navigation css */
+#navigation {
+    background-color: indianred;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#navigation ul li{
+    list-style-type: none;
+    display: inline-block;
+    text-align: right;
+    padding: 5px 5px 5px 5px;
+}
+
+/* intro css */
+.intro {
+    margin-top: 150px;
+    position: relative;
+}
+
+/* h5 css */
+h5 {
+    font-family: cursive;
+    margin-top: 50px;
+}
+
+/* logo css */
+#logo {
+    width: 150px;
+    height: 120px;
+}
+
