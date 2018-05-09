@@ -1,49 +1,155 @@
+/* importing google fonts */
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
 /* global styling */
 body {
+    font-family: cursive;
+    font-size: 18px;
+    color: #555;
     background-color: blanchedalmond;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-/* conatiner stylesheet */
-.container {
-    width: 80%;
+#page {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
 }
 
-/* navigation css */
+h1 {
+    margin: 0 0 1em 0;
+    font-size: 2.8em;
+    font-weight: 700;
+}
+
+h2 {
+    margin: 0 0 .5em 0;
+    font-weight: 700;
+    font-size: 1.6em;
+    line-height: 1.1em;
+}
+
+h3 {
+    margin: 0 0 .5em 0;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+h4 {
+    margin: 0 0 1.5em 0;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+p { margin: 0 0 1em 0; }
+
+a { color: #007eff; }
+
+a.btn { 
+    font-size: 1.5em; 
+    text-decoration: none;
+    color: white;
+    background-color: teal;
+    font-family: 'Dancing Script', cursive;
+    border: 1px solid white;
+    padding: 4px 15px;
+
+}
+
+a.btn:hover {
+    background-color: darkcyan;
+}
+
+/* Nav styling */
 nav {
     background-color: indianred;
+    height: 100px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
     position: fixed;
-    width: 100%;
-    height: 80px;
     top: 0;
     left: 0;
+    width: 100%;
 }
 
 nav a{
-    list-style-type: none;
-    display: inline-block;
-    align: right;
-    padding: 0 20px 0 20px;
+    float: left;
+    text-align: center;
+    display: block;
+    padding: 0 25px 25px 25px;
+    margin: 0;
     text-decoration: none;
     color: white;
 }
 
-.active {
-    color: black;
-} 
+/* all sections styling */
+section { padding: 0 15px; }
+section::after{ content:''; display: block; clear: both }
 
-/* intro css */
-.intro {
-    margin-top: 150px;
-    position: relative;
+/* section intro styling */
+section.intro {
+    margin-top: 115px;
+    margin-bottom: 30px;
+    padding: 0;
 }
 
-/* h5 css */
-h5 {
-    font-family: cursive;
-    margin-top: 50px;
+/* section upcoming events styling */
+section.upcoming-events img{
+    width: 380px;    
+    height: 380px;
+    
 }
 
+section.upcoming-events aside {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+section.upcoming-events .content {
+    margin: 10px;
+    background: no-repeat center top;
+    padding-top: 15px;
+}
+
+section.upcoming-events .content p{
+    text-align: left;
+}
+
+/* section artists-odd styling*/
+section.artists-odd.first{
+    margin-top: 115px;
+}
+
+section.artists-odd {
+    background-color: darkgray;
+}
+
+section.artists-odd img{
+        float: left;
+}
+
+/* section artists-even styling*/
+section.artists-even {
+    background-color: dimgray;
+}
+
+section.artists-even img{ 
+    float: right;
+}
+
+/* common styling for both section artists even and odd */
+section.artists-odd, section.artists-even {
+    padding: 10px 10px;
+    margin: 15px 5px;
+    width: 100%;
+    min-height: 150px;
+}
+
+section.artists-odd img, section.artists-even img {    
+    width: 400px;
+    height: 150px;
+}
 
 
